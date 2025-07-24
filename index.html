@@ -21,6 +21,10 @@
 
         html {
             scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
         }
 
         body {
@@ -29,6 +33,9 @@
             color: #E0E0E0;
             line-height: 1.6;
             overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            width: 100%;
         }
 
         /* Navigation */
@@ -78,16 +85,20 @@
         /* Hero Section */
         #home {
             height: 100vh;
+            width: 100vw;
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                         url('hero-background.jpg');
             background-size: cover;
-            background-position: center;
+            background-position: center center;
+            background-repeat: no-repeat;
             background-attachment: fixed;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             position: relative;
+            margin: 0;
+            padding: 0;
         }
 
         .hero-content {
