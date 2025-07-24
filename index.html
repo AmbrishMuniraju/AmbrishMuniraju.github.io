@@ -79,7 +79,10 @@
         #home {
             height: 100vh;
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                        linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        url('code-background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -258,10 +261,11 @@
 
         /* Skills Section */
         .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
             gap: 2rem;
             margin-top: 2rem;
+            justify-content: center;
         }
 
         .skill-category {
@@ -270,6 +274,8 @@
             border-radius: 15px;
             border: 1px solid #333;
             transition: all 0.3s ease;
+            flex: 1;
+            min-width: 300px;
         }
 
         .skill-category:hover {
@@ -480,7 +486,7 @@
                 <p>Dedicated and detail-oriented business analyst with a 2:1 Master's degree in Business Analysis from Queen's University Belfast. Proficient in data analysis, problem-solving, and translating complex insights into strategic actions. Passionate about using analytical expertise to drive business success and innovation. Actively seeking opportunities to contribute and grow in dynamic organizations.</p>
             </div>
             <div class="about-image">
-                <div style="width: 300px; height: 300px; background: linear-gradient(45deg, #667eea, #764ba2); border-radius: 15px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600;">AI Data Image Placeholder</div>
+                <img src="profile-picture.jpg" alt="Ambrish Muniraju" style="width: 300px; height: 300px; object-fit: cover; border-radius: 15px; margin: 0 auto;">
             </div>
         </div>
     </section>
@@ -490,11 +496,13 @@
         <h2 class="section-title">My Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-image">Project 1 Image</div>
+                <div class="project-image">
+                    <img src="project-1-movie.svg" alt="Movie Success Factor Analysis" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 <div class="project-content">
-                    <h3 class="project-title">Project Title 1</h3>
-                    <p>Description of the project and technologies used.</p>
-                    <a href="https://github.com/AmbrishMuniraju" class="btn project-btn" target="_blank">
+                    <h3 class="project-title">Movie-Success-Factor-Analysis</h3>
+                    <p>An analysis of movie success factors using Machine Learning (Linear Regression, Random Forest, Gradient Boosting, XGBoost) on an IMDb dataset.</p>
+                    <a href="https://github.com/AmbrishMuniraju/Movie-Success-Factor-Analysis" class="btn project-btn" target="_blank">
                         <i class="fab fa-github"></i>
                         View on GitHub
                     </a>
@@ -502,11 +510,13 @@
             </div>
 
             <div class="project-card">
-                <div class="project-image">Project 2 Image</div>
+                <div class="project-image">
+                    <img src="project-2-sentiment.svg" alt="Customer Review Sentiment Analysis" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 <div class="project-content">
-                    <h3 class="project-title">Project Title 2</h3>
-                    <p>Description of the project and technologies used.</p>
-                    <a href="https://github.com/AmbrishMuniraju" class="btn project-btn" target="_blank">
+                    <h3 class="project-title">Customer-Review-Sentiment-Analysis</h3>
+                    <p>An NLP project applying sentiment and emotion analysis to customer reviews using Python, TextBlob, and Scikit-learn's Logistic Regression model.</p>
+                    <a href="https://github.com/AmbrishMuniraju/Customer-Review-Sentiment-Analysis" class="btn project-btn" target="_blank">
                         <i class="fab fa-github"></i>
                         View on GitHub
                     </a>
@@ -514,11 +524,13 @@
             </div>
 
             <div class="project-card">
-                <div class="project-image">Project 3 Image</div>
+                <div class="project-image">
+                    <img src="project-3-insurance.svg" alt="Insurance Purchase Prediction" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 <div class="project-content">
-                    <h3 class="project-title">Project Title 3</h3>
-                    <p>Description of the project and technologies used.</p>
-                    <a href="https://github.com/AmbrishMuniraju" class="btn project-btn" target="_blank">
+                    <h3 class="project-title">Insurance-Purchase-Prediction</h3>
+                    <p>Predicting customer life insurance purchases using Python, Scikit-learn, and data visualization. Models include Logistic Regression and Random Forest.</p>
+                    <a href="https://github.com/AmbrishMuniraju/Insurance-Purchase-Prediction" class="btn project-btn" target="_blank">
                         <i class="fab fa-github"></i>
                         View on GitHub
                     </a>
@@ -526,11 +538,13 @@
             </div>
 
             <div class="project-card">
-                <div class="project-image">Project 4 Image</div>
+                <div class="project-image">
+                    <img src="project-4-hr.svg" alt="HR Analytics Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 <div class="project-content">
-                    <h3 class="project-title">Project Title 4</h3>
-                    <p>Description of the project and technologies used.</p>
-                    <a href="https://github.com/AmbrishMuniraju" class="btn project-btn" target="_blank">
+                    <h3 class="project-title">HR-Analytics-Dashboard</h3>
+                    <p>An analytics dashboard investigating the key drivers of employee attrition, including job role, promotion history, and training participation.</p>
+                    <a href="https://github.com/AmbrishMuniraju/HR-Analytics-Dashboard" class="btn project-btn" target="_blank">
                         <i class="fab fa-github"></i>
                         View on GitHub
                     </a>
@@ -538,11 +552,13 @@
             </div>
 
             <div class="project-card">
-                <div class="project-image">Project 5 Image</div>
+                <div class="project-image">
+                    <img src="project-5-segmentation.svg" alt="Customer Segmentation RFM Clustering" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 <div class="project-content">
-                    <h3 class="project-title">Project Title 5</h3>
-                    <p>Description of the project and technologies used.</p>
-                    <a href="https://github.com/AmbrishMuniraju" class="btn project-btn" target="_blank">
+                    <h3 class="project-title">Customer-Segmentation-RFM-Clustering</h3>
+                    <p>Customer segmentation for an online gifts retailer using k-means clustering and RFM analysis in R to identify and profile distinct customer groups.</p>
+                    <a href="https://github.com/AmbrishMuniraju/Customer-Segmentation-RFM-Clustering" class="btn project-btn" target="_blank">
                         <i class="fab fa-github"></i>
                         View on GitHub
                     </a>
@@ -550,10 +566,16 @@
             </div>
 
             <div class="project-card">
-                <div class="project-image">Project 6 Image</div>
+                <div class="project-image">
+                    <img src="project-6-portfolio.svg" alt="AI Enhanced Portfolio" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 <div class="project-content">
-                    <h3 class="project-title">Portfolio Website (Cursor & Gemini)</h3>
-                    <p>A modern, responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+                    <h3 class="project-title">AI-Enhanced Portfolio</h3>
+                    <p>This is my personal portfolio website. I used Google's Gemini for creative prompts and content generation, Replit as the coding environment, and GitHub for hosting. This project showcases an efficient workflow that combines AI assistance with modern development and deployment tools.</p>
+                    <a href="https://github.com/AmbrishMuniraju/Cursor-website" class="btn project-btn" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
                 </div>
             </div>
         </div>

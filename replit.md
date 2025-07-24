@@ -30,10 +30,10 @@ Preferred communication style: Simple, everyday language.
 - Links to: Home, About, Projects, Skills, Education, Contact
 
 ### Page Sections
-1. **Hero Section** (`#home`): Full-screen background with centered content and social links
-2. **About Section** (`#about`): Two-column layout with personal description and image
-3. **Projects Section** (`#projects`): Responsive grid of 6 project cards with GitHub integration
-4. **Skills Section**: Technology stack display
+1. **Hero Section** (`#home`): Full-screen background with code image and centered content with social links
+2. **About Section** (`#about`): Two-column layout with personal description and profile photo
+3. **Projects Section** (`#projects`): Responsive grid of 6 detailed project cards with specific GitHub links and SVG graphics
+4. **Skills Section**: Three-column horizontal layout showing core competencies
 5. **Education Section**: Academic background information
 6. **Contact Section**: Professional contact information and social links
 
@@ -64,10 +64,10 @@ Preferred communication style: Simple, everyday language.
 - **External Links**: LinkedIn and GitHub profile integration
 
 ### Asset Requirements
-- Background images (placeholder references):
-  - `background-image.jpg` - Hero section background
-  - `ai-data-image.jpg` - About section image
-  - `project-1.jpg` through `project-6.jpg` - Project showcase images
+- Background images:
+  - `code-background.jpg` - Hero section background (updated from attached purple gradient code image)
+  - `profile-picture.jpg` - About section profile image (user's personal photo)
+  - `project-1-movie.svg` through `project-6-portfolio.svg` - Project showcase images (custom SVG graphics)
 
 ## Deployment Strategy
 

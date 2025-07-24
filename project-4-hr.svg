@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#111827"/>
+      <stop offset="100%" style="stop-color:#1f2937"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg4)"/>
+  
+  <!-- Dashboard frame -->
+  <rect x="50" y="40" width="300" height="200" fill="none" stroke="#6b7280" stroke-width="2" rx="10"/>
+  
+  <!-- Header -->
+  <rect x="50" y="40" width="300" height="30" fill="#374151" rx="10 10 0 0"/>
+  <text x="200" y="60" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">HR Analytics Dashboard</text>
+  
+  <!-- Org chart -->
+  <rect x="70" y="90" width="40" height="25" fill="#3b82f6" rx="3"/>
+  <rect x="130" y="90" width="40" height="25" fill="#3b82f6" rx="3"/>
+  <rect x="190" y="90" width="40" height="25" fill="#3b82f6" rx="3"/>
+  
+  <rect x="80" y="135" width="30" height="20" fill="#6366f1" rx="2"/>
+  <rect x="140" y="135" width="30" height="20" fill="#6366f1" rx="2"/>
+  <rect x="200" y="135" width="30" height="20" fill="#6366f1" rx="2"/>
+  
+  <line x1="90" y1="115" x2="90" y2="135" stroke="#6b7280" stroke-width="1"/>
+  <line x1="150" y1="115" x2="150" y2="135" stroke="#6b7280" stroke-width="1"/>
+  <line x1="210" y1="115" x2="210" y2="135" stroke="#6b7280" stroke-width="1"/>
+  
+  <!-- Donut chart -->
+  <circle cx="290" cy="140" r="30" fill="none" stroke="#374151" stroke-width="20"/>
+  <circle cx="290" cy="140" r="30" fill="none" stroke="#ef4444" stroke-width="20" 
+          stroke-dasharray="47 141" stroke-dashoffset="0" transform="rotate(-90 290 140)"/>
+  <circle cx="290" cy="140" r="30" fill="none" stroke="#10b981" stroke-width="20" 
+          stroke-dasharray="94 94" stroke-dashoffset="-47" transform="rotate(-90 290 140)"/>
+  
+  <!-- Legend -->
+  <rect x="250" y="190" width="8" height="8" fill="#ef4444"/>
+  <text x="265" y="197" font-family="Arial, sans-serif" font-size="9" fill="#d1d5db">Attrition</text>
+  <rect x="250" y="205" width="8" height="8" fill="#10b981"/>
+  <text x="265" y="212" font-family="Arial, sans-serif" font-size="9" fill="#d1d5db">Retained</text>
+  
+  <!-- Bar chart -->
+  <rect x="70" y="200" width="15" height="20" fill="#3b82f6"/>
+  <rect x="90" y="190" width="15" height="30" fill="#6366f1"/>
+  <rect x="110" y="185" width="15" height="35" fill="#8b5cf6"/>
+  <rect x="130" y="195" width="15" height="25" fill="#a855f7"/>
+  <rect x="150" y="180" width="15" height="40" fill="#c084fc"/>
+  
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="14" fill="#e5e7eb" text-anchor="middle">HR Analytics</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1821"/>
+      <stop offset="100%" style="stop-color:#1a202c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.1"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg6)"/>
+  
+  <!-- Human hand outline -->
+  <path d="M 120 180 Q 110 170 110 160 Q 110 150 120 150 Q 130 150 130 160 L 130 170 
+           Q 140 160 150 160 Q 160 160 160 170 L 160 180
+           Q 170 170 180 170 Q 190 170 190 180 L 190 190
+           Q 200 180 210 180 Q 220 180 220 190 L 220 200
+           Q 220 210 210 220 L 130 220 Q 120 220 120 210 Z" 
+        fill="none" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- AI brain/network center -->
+  <circle cx="280" cy="120" r="40" fill="url(#glow)"/>
+  <circle cx="280" cy="120" r="25" fill="none" stroke="#BB86FC" stroke-width="2"/>
+  
+  <!-- Neural network nodes -->
+  <circle cx="260" cy="100" r="4" fill="#667eea"/>
+  <circle cx="300" cy="100" r="4" fill="#667eea"/>
+  <circle cx="260" cy="140" r="4" fill="#667eea"/>
+  <circle cx="300" cy="140" r="4" fill="#667eea"/>
+  <circle cx="280" cy="80" r="4" fill="#764ba2"/>
+  <circle cx="280" cy="160" r="4" fill="#764ba2"/>
+  
+  <!-- Connections -->
+  <line x1="260" y1="100" x2="280" y2="120" stroke="#BB86FC" stroke-width="1.5"/>
+  <line x1="300" y1="100" x2="280" y2="120" stroke="#BB86FC" stroke-width="1.5"/>
+  <line x1="260" y1="140" x2="280" y2="120" stroke="#BB86FC" stroke-width="1.5"/>
+  <line x1="300" y1="140" x2="280" y2="120" stroke="#BB86FC" stroke-width="1.5"/>
+  <line x1="280" y1="80" x2="280" y2="120" stroke="#BB86FC" stroke-width="1.5"/>
+  <line x1="280" y1="160" x2="280" y2="120" stroke="#BB86FC" stroke-width="1.5"/>
+  
+  <!-- Connection between hand and AI -->
+  <path d="M 220 190 Q 240 160 250 140" stroke="#BB86FC" stroke-width="2" fill="none" 
+        stroke-dasharray="5,5" opacity="0.8"/>
+  
+  <!-- Energy/collaboration particles -->
+  <circle cx="235" cy="170" r="2" fill="#667eea" opacity="0.8"/>
+  <circle cx="245" cy="155" r="2" fill="#764ba2" opacity="0.6"/>
+  <circle cx="240" cy="165" r="1.5" fill="#BB86FC" opacity="0.9"/>
+  
+  <!-- Code symbols -->
+  <text x="80" y="120" font-family="monospace" font-size="12" fill="#4a5568">&lt;/&gt;</text>
+  <text x="320" y="180" font-family="monospace" font-size="12" fill="#4a5568">AI</text>
+  
+  <!-- Binary flow -->
+  <text x="150" y="240" font-family="monospace" font-size="8" fill="#2d3748" opacity="0.6">01001001</text>
+  <text x="220" y="250" font-family="monospace" font-size="8" fill="#2d3748" opacity="0.6">11010011</text>
+  
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0" text-anchor="middle">AI Enhanced Portfolio</text>
+</svg>
