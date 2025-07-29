@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#1A1A1A"/>
+  <path d="M50 20l15 15-15 15-15-15z" fill="#00D4FF"/>
+  <path d="M50 50l10 10-10 10-10-10z" fill="#FF6B35"/>
+  <text x="50" y="85" text-anchor="middle" font-family="Arial" font-size="6" font-weight="bold" fill="white">Labs</text>
+</svg>

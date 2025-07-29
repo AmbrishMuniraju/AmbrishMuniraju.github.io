@@ -1,0 +1,109 @@
+Hello! I need you to build my complete personal portfolio website from scratch. Please follow every instruction carefully to create the final version.
+
+The final output must be a single index.html file. All CSS must be inside a <style> tag in the <head>, and all JavaScript must be inside a <script> tag before the closing </body> tag.
+
+1. General Design & Core CSS
+
+Theme: Modern, responsive, dark theme (e.g., background #121212, text #E0E0E0).
+
+Navigation: A fixed navbar at the top with links that smooth-scroll to each section.
+
+Crucial CSS Fixes:
+
+Apply a CSS reset to prevent blank spaces around the page: html, body { margin: 0; padding: 0; width: 100%; }
+
+Ensure the home section's background image always covers the full screen without distortion.
+
+2. Final Section Order & Content
+
+Please create the website sections in this specific order:
+
+Section 1: Home (id="home")
+
+Functionality: This section must fill the entire initial screen (height: 100vh).
+
+Background: Use a full-screen background image. In the CSS, use the placeholder path tech-background.jpg. Ensure the CSS uses background-size: cover; and background-position: center;.
+
+Content:
+
+Main Heading (<h1>): Ambrish Muniraju
+
+Tagline (<p>): Data Analyst / Business Analyst
+
+Buttons: LinkedIn and GitHub buttons with your profile links.
+
+Section 2: About Me (id="about")
+
+Content:
+
+Heading (<h2>): About Me
+
+Paragraph (<p>): Use this exact text:
+
+"As an aspiring AI Data Engineer and passionate AI enthusiast, my recent Master's in Business Analytics has equipped me to translate complex data into actionable insights. My hands-on project experience includes building machine learning models, performing NLP-based sentiment analysis, and developing insightful dashboards with Tableau. Proficient in Python, R, SQL, and Scikit-learn, I am driven by curiosity and eager to apply my problem-solving skills to help a dynamic organisation leverage data for growth and innovation."
+
+Image: Include a blending image with the placeholder ai-data-image.jpg.
+
+Section 3: Projects (id="projects")
+
+Content: Create 6 project cards with the following details and image placeholders.
+
+Project 1: Name: Movie-Success-Factor-Analysis, Description: An analysis of movie success factors using Machine Learning..., Link: https://github.com/AmbrishMuniraju/Movie-Success-Factor-Analysis, Image: project-1-movie.jpg
+
+Project 2: Name: Customer-Review-Sentiment-Analysis, Description: An NLP project applying sentiment and emotion analysis..., Link: https://github.com/AmbrishMuniraju/Customer-Review-Sentiment-Analysis, Image: project-2-sentiment.jpg
+
+Project 3: Name: Insurance-Purchase-Prediction, Description: Predicting customer life insurance purchases..., Link: https://github.com/AmbrishMuniraju/Insurance-Purchase-Prediction, Image: project-3-insurance.jpg
+
+Project 4: Name: HR-Analytics-Dashboard, Description: An analytics dashboard investigating the key drivers of employee attrition..., Link: https://github.com/AmbrishMuniraju/HR-Analytics-Dashboard, Image: project-4-hr.jpg
+
+Project 5: Name: Customer-Segmentation-RFM-Clustering, Description: Customer segmentation for an online gifts retailer..., Link: https://github.com/AmbrishMuniraju/Customer-Segmentation-RFM-Clustering, Image: project-5-segmentation.jpg
+
+Project 6: Name: AI-Enhanced Portfolio, Description: This is my personal portfolio website. I used Google's Gemini..., Link: https://github.com/AmbrishMuniraju/Cursor-website, Image: project-6-portfolio.jpg
+
+Section 4: Core Competencies (id="skills")
+
+Layout: Display the three sub-sections ("Analytical & Professional", "Technical Skills", "Programming & Software") in a single horizontal row. The bulleted lists under them should remain in their respective columns.
+
+Content: Use the lists of skills provided previously.
+
+Section 5: My Professional AI Toolkit (id="toolkit")
+
+Functionality:
+
+Create a grid to display tool logos. For each category, initially show only the top 4 logos.
+
+Below the top 4, add a "Show More" button.
+
+On click, this button must use a smooth animation (e.g., animate max-height) to expand the section and reveal the remaining logos. The button text must change to "Show Less". Clicking again should reverse this.
+
+Visuals: Use <img> tags for all logos. Logos must have a nice hover effect (e.g., scale up slightly).
+
+Content & Placeholders:
+
+📊 Data Analysis & Visualization: (Top 3 only, no toggle needed) logo-tableau.svg, logo-knime.svg, logo-numerous-ai.svg
+
+💻 Coding & Development: (Top 4 only, no toggle needed) logo-replit.svg, logo-cursor.svg, logo-github-copilot.svg, logo-google-ai-studio.svg
+
+🧠 AI-Assisted Research & Ideation: (Top 4) logo-gemini.svg, logo-chatgpt.svg, logo-claude.svg, logo-notebooklm.svg. (Hidden) logo-perplexity-ai.svg.
+
+🚀 Productivity & Workflow Customization: (Top 4 only, no toggle needed) logo-custom-gpts.svg, logo-gemini-gems.svg, logo-perplexity-labs.svg, logo-notion.svg.
+
+🎬 Generative Media & Presentation: (Top 4) logo-gamma-ai.svg, logo-sora.svg, logo-veo.svg, logo-luma-labs.svg. (Hidden) logo-midjourney.svg, logo-krea-ai.svg, logo-higgsfield.svg, logo-hailuo-ai.svg, logo-suno-ai.svg, logo-elevenlabs.svg.
+
+Section 6: Education (id="education")
+
+Content:
+
+MSc in Business Analytics, Queen's University Belfast, Graduated September 2024. Next to the university name, add <img src="logo-queens-university.png" alt="Queen's University Belfast Logo" style="height: 40px;">.
+
+Bachelors in Commerce, Bangalore University, Graduated September 2022. Next to the university name, add <img src="logo-bangalore-university.png" alt="Bangalore University Logo" style="height: 40px;">.
+
+Section 7: Contact (id="contact")
+
+Content:
+
+Email: ambrishmuniraju02@gmail.com
+
+Include the LinkedIn and GitHub buttons again.
+
+Please generate the complete, final index.html file that incorporates all of these features and content updates.

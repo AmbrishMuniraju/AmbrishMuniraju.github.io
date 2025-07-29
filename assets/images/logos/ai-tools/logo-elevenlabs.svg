@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#000"/>
+  <path d="M20 30h10v40h-10zM40 20h10v60h-10zM60 35h10v30h-10zM80 25h10v50h-10z" fill="#FF6B35"/>
+  <text x="50" y="85" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" fill="white">ElevenLabs</text>
+</svg>

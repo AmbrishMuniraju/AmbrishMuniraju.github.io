@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#000"/>
+  <path d="M128 32L96 128h64l-32 96 32-96h-64l32-96z" fill="#00D4FF"/>
+  <circle cx="200" cy="56" r="24" fill="#00D4FF"/>
+  <text x="128" y="200" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">CURSOR</text>
+</svg>

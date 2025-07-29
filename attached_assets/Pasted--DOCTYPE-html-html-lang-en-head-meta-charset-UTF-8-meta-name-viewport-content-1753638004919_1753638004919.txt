@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambrish Muniraju - Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS Reset */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(18, 18, 18, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #BB86FC;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: #E0E0E0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #BB86FC;
+        }
+
+        /* Hero Section */
+        #home {
+            height: 100vh; /* Set height to 100% of the viewport height */
+            width: 100%;  /* Set width to 100% of the viewport width */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            
+            /* --- This is the critical part for the background --- */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                             url('hero-background.jpg');
+            background-size: cover; /* This is the key: scales the image to cover the entire area */
+            background-position: center center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #FFFFFF;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #E0E0E0;
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: #BB86FC;
+            color: #121212;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(187, 134, 252, 0.3);
+            background: #9C6BDB;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #BB86FC;
+            border: 2px solid #BB86FC;
+        }
+
+        .btn-outline:hover {
+            background: #BB86FC;
+            color: #121212;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 5rem 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #BB86FC;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: #BB86FC;
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            filter: brightness(0.8);
+            mix-blend-mode: luminosity;
+            transition: all 0.3s ease;
+        }
+
+        .about-image img:hover {
+            filter: brightness(1);
+            mix-blend-mode: normal;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: #1E1E1E;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid #333;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(187, 134, 252, 0.1);
+            border-color: #BB86FC;
+        }
+
+        .project-image {
+            height: 200px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #BB86FC;
+        }
+
+        .project-btn {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+            justify-content: center;
+        }
+
+        .skill-category {
+            background: #1E1E1E;
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .skill-category:hover {
+            border-color: #BB86FC;
+            transform: translateY(-5px);
+        }
+
+        .skill-category h3 {
+            color: #BB86FC;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #333;
+            transition: color 0.3s ease;
+        }
+
+        .skill-list li:last-child {
+            border-bottom: none;
+        }
+
+        .skill-list li:hover {
+            color: #BB86FC;
+        }
+
+        /* Education Section */
+        .education-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .education-item {
+            background: #1E1E1E;
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+        }
+
+        .education-item:hover {
+            border-color: #BB86FC;
+            transform: translateY(-5px);
+        }
+
+        .education-item h3 {
+            color: #BB86FC;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-item p {
+            margin: 0.5rem 0;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-email {
+            font-size: 1.5rem;
+            color: #BB86FC;
+            margin: 2rem 0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-email:hover {
+            color: #9C6BDB;
+        }
+
+        /* Footer */
+        footer {
+            background: #1E1E1E;
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #333;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .education-content {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 3rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">AM</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero-content">
+            <h1>Ambrish Muniraju</h1>
+            <p>Aspiring AI Data Engineer / Data Analyst</p>
+            <div class="hero-buttons">
+                <a href="https://www.linkedin.com/in/ambrishmuniraju/" class="btn" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/AmbrishMuniraju" class="btn btn-outline" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Dedicated and detail-oriented business analyst with a 2:1 Master's degree in Business Analysis from Queen's University Belfast. Proficient in data analysis, problem-solving, and translating complex insights into strategic actions. Passionate about using analytical expertise to drive business success and innovation. Actively seeking opportunities to contribute and grow in dynamic organizations.</p>
+            </div>
+            <div class="about-image">
+                <img src="profile-picture.jpg" alt="Ambrish Muniraju" style="width: 300px; height: 300px; object-fit: cover; border-radius: 15px; margin: 0 auto;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project-1-movie.svg" alt="Movie Success Factor Analysis" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Movie-Success-Factor-Analysis</h3>
+                    <p>An analysis of movie success factors using Machine Learning (Linear Regression, Random Forest, Gradient Boosting, XGBoost) on an IMDb dataset.</p>
+                    <a href="https://github.com/AmbrishMuniraju/Movie-Success-Factor-Analysis" class="btn project-btn" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project-2-sentiment.svg" alt="Customer Review Sentiment Analysis" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Customer-Review-Sentiment-Analysis</h3>
+                    <p>An NLP project applying sentiment and emotion analysis to customer reviews using Python, TextBlob, and Scikit-learn's Logistic Regression model.</p>
+                    <a href="https://github.com/AmbrishMuniraju/Customer-Review-Sentiment-Analysis" class="btn project-btn" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project-3-insurance.svg" alt="Insurance Purchase Prediction" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Insurance-Purchase-Prediction</h3>
+                    <p>Predicting customer life insurance purchases using Python, Scikit-learn, and data visualization. Models include Logistic Regression and Random Forest.</p>
+                    <a href="https://github.com/AmbrishMuniraju/Insurance-Purchase-Prediction" class="btn project-btn" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project-4-hr.svg" alt="HR Analytics Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">HR-Analytics-Dashboard</h3>
+                    <p>An analytics dashboard investigating the key drivers of employee attrition, including job role, promotion history, and training participation.</p>
+                    <a href="https://github.com/AmbrishMuniraju/HR-Analytics-Dashboard" class="btn project-btn" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project-5-segmentation.svg" alt="Customer Segmentation RFM Clustering" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Customer-Segmentation-RFM-Clustering</h3>
+                    <p>Customer segmentation for an online gifts retailer using k-means clustering and RFM analysis in R to identify and profile distinct customer groups.</p>
+                    <a href="https://github.com/AmbrishMuniraju/Customer-Segmentation-RFM-Clustering" class="btn project-btn" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project-6-portfolio.svg" alt="AI Enhanced Portfolio" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">AI-Enhanced Portfolio</h3>
+                    <p>This is my personal portfolio website. I used Google's Gemini for creative prompts and content generation, Replit as the coding environment, and GitHub for hosting. This project showcases an efficient workflow that combines AI assistance with modern development and deployment tools.</p>
+                    <a href="https://github.com/AmbrishMuniraju/AmbrishMuniraju.github.io" class="btn project-btn" target="_blank">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <h2 class="section-title">Core Competencies</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Analytical & Professional</h3>
+                <ul class="skill-list">
+                    <li>Data-Driven Decision Making</li>
+                    <li>Team Collaboration & Communication</li>
+                    <li>Effective Communication</li>
+                    <li>Time Management Skills</li>
+                    <li>Problem-Solving & Critical Thinking</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Technical Skills</h3>
+                <ul class="skill-list">
+                    <li>Data Cleaning & Preprocessing</li>
+                    <li>Data Modeling & Pipelines</li>
+                    <li>Exploratory Data Analysis</li>
+                    <li>Machine Learning & Predictive Analytics</li>
+                    <li>Data Visualization & Storytelling</li>
+                    <li>Statistical Analysis</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Programming & Software</h3>
+                <ul class="skill-list">
+                    <li>Languages: Python, R, SQL</li>
+                    <li>Libraries: Pandas, NumPy, Scikit-learn</li>
+                    <li>Tools: Excel, KNIME, Tableau</li>
+                    <li>Version Control: Git, GitHub</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="fade-in">
+        <h2 class="section-title">Education</h2>
+        <div class="education-content">
+            <div class="education-item">
+                <h3>MSc in Business Analytics</h3>
+                <p>Queen's University Belfast</p>
+                <p>Graduated September 2024</p>
+            </div>
+
+            <div class="education-item">
+                <h3>Bachelors in Commerce</h3>
+                <p>Bangalore University</p>
+                <p>Graduated September 2022</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <p>Feel free to reach out to discuss opportunities or collaborations.</p>
+            <a href="mailto:ambrishmuniraju05@gmail.com" class="contact-email">ambrishmuniraju05@gmail.com</a>
+            <div class="hero-buttons">
+                <a href="https://www.linkedin.com/in/ambrishmuniraju/" class="btn" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/AmbrishMuniraju" class="btn btn-outline" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ambrish Muniraju. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(18, 18, 18, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(18, 18, 18, 0.95)';
+            }
+        });
+
+        // Add active state to navigation links
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Add some interactive animations to project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add ripple effect to buttons
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Add CSS for ripple effect
+        const style = document.createElement('style');
+        style.textContent = `
+            .btn {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .ripple {
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.3);
+                transform: scale(0);
+                animation: rippleEffect 0.6s linear;
+                pointer-events: none;
+            }
+            
+            @keyframes rippleEffect {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+            
+            .nav-link.active {
+                color: #BB86FC;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

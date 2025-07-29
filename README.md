@@ -1,115 +1,196 @@
 # Ambrish Muniraju - Portfolio Website
 
-A modern, responsive portfolio website showcasing my data analysis and machine learning projects. Built as a single-file HTML application with embedded CSS and JavaScript for optimal performance and easy deployment.
+A modern, responsive personal portfolio website showcasing my journey as a Data Analyst and Business Intelligence professional with expertise in AI and machine learning.
 
 ## 🌟 Features
 
-- **Modern Dark Theme**: Professional dark UI with purple accent colors
-- **Responsive Design**: Optimized for all device types and screen sizes
-- **Single-File Architecture**: Complete website contained in one HTML file
-- **Smooth Animations**: Fade-in effects and hover interactions
-- **Project Showcase**: 6 detailed data science and analytics projects
-- **Professional Layout**: Fixed navigation, hero section, about, projects, skills, education, and contact sections
+- **Single-Page Application**: Clean, modern design with smooth scrolling navigation
+- **Responsive Design**: Optimized for all devices (desktop, tablet, mobile)
+- **Dark Theme**: Professional dark mode design with purple accents
+- **Interactive Elements**: Hover effects and smooth animations
+- **AI Toolkit Showcase**: Comprehensive display of 25+ AI tools and technologies
+- **Project Portfolio**: Visual showcase of 6 data science projects
+- **Education Section**: University logos and academic credentials
+- **Contact Integration**: Direct email and social media links
 
-## 🚀 Live Demo
+## 🛠️ Technologies Used
 
-Visit the live website: [Portfolio URL]
-
-## 📱 Sections
-
-### 1. Hero Section
-- Full-screen background with personal branding
-- Direct links to LinkedIn and GitHub profiles
-- Professional introduction
-
-### 2. About Me
-- Personal description highlighting business analysis background
-- Professional profile photo
-- Education and career focus
-
-### 3. Projects Portfolio
-Six comprehensive data science projects:
-
-1. **Movie Success Factor Analysis** - Machine Learning analysis using Linear Regression, Random Forest, Gradient Boosting, and XGBoost on IMDb dataset
-2. **Customer Review Sentiment Analysis** - NLP project with sentiment and emotion analysis using Python, TextBlob, and Scikit-learn
-3. **Insurance Purchase Prediction** - Predictive modeling for life insurance purchases using Logistic Regression and Random Forest
-4. **HR Analytics Dashboard** - Employee attrition analysis examining job roles, promotions, and training participation
-5. **Customer Segmentation RFM Clustering** - K-means clustering and RFM analysis for online retailer customer segmentation
-6. **AI-Enhanced Portfolio** - This portfolio website showcasing AI-assisted development workflow
-
-### 4. Core Competencies
-Three-column layout showcasing:
-- **Analytical & Professional Skills**: Decision making, communication, problem-solving
-- **Technical Skills**: Data cleaning, modeling, machine learning, visualization
-- **Programming & Software**: Python, R, SQL, Pandas, NumPy, Scikit-learn, Tableau
-
-### 5. Education
-- MSc in Business Analytics - Queen's University Belfast (2024)
-- Bachelors in Commerce - Bangalore University (2022)
-
-### 6. Contact
-- Professional email contact
-- Social media links (LinkedIn, GitHub)
-
-## 🛠️ Technical Stack
-
-- **Frontend**: HTML5, CSS3, JavaScript (ES6)
-- **Styling**: Custom CSS with Flexbox and Grid layouts
-- **Typography**: Google Fonts (Poppins)
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript
+- **Fonts**: Google Fonts (Poppins, Playfair Display, JetBrains Mono)
 - **Icons**: Font Awesome 6.4.0
-- **Graphics**: Custom SVG illustrations for projects
-- **Performance**: Single-file architecture for fast loading
+- **Hosting**: Static hosting ready (Netlify, Vercel, GitHub Pages)
 
-## 💻 Development Workflow
-
-This portfolio was created using an AI-enhanced development process:
-- **Content Generation**: Google Gemini for creative prompts and descriptions
-- **Development Environment**: Replit for coding and testing
-- **Version Control**: GitHub for hosting and collaboration
-- **Design**: Custom SVG graphics and responsive CSS
-
-## 📂 File Structure
+## 📂 Project Structure
 
 ```
-portfolio/
-├── index.html                    # Main website file
-├── hero-background.jpg          # Hero section background image
-├── profile-picture.jpg          # About section profile photo
-├── project-1-movie.svg         # Movie analysis project graphic
-├── project-2-sentiment.svg     # Sentiment analysis project graphic
-├── project-3-insurance.svg     # Insurance prediction project graphic
-├── project-4-hr.svg           # HR analytics project graphic
-├── project-5-segmentation.svg  # Customer segmentation project graphic
-├── project-6-portfolio.svg     # Portfolio project graphic
-└── README.md                    # Project documentation
+portfolio-website/
+├── index.html                          # Main HTML file with embedded CSS/JS
+├── README.md                          # Project documentation
+├── assets/
+│   ├── images/
+│   │   ├── backgrounds/
+│   │   │   ├── tech-background.jpg    # Hero section background
+│   │   │   └── ai-data-image.jpg      # About section image
+│   │   ├── projects/
+│   │   │   ├── project-1-movie-new.png       # Movie Success Analysis
+│   │   │   ├── project-2-sentiment.png       # Sentiment Analysis
+│   │   │   ├── project-3-insurance.png       # Insurance Prediction
+│   │   │   ├── project-4-hr-new.png          # HR Analytics Dashboard
+│   │   │   ├── project-5-segmentation-new.png # Customer Segmentation
+│   │   │   └── project-6-portfolio-new.png   # AI-Enhanced Portfolio
+│   │   ├── logos/
+│   │   │   ├── universities/
+│   │   │   │   ├── logo-bangalore-university.png
+│   │   │   │   └── logo-queens-university.png
+│   │   │   └── ai-tools/
+│   │   │       ├── logo-chatgpt.svg
+│   │   │       ├── logo-claude.svg
+│   │   │       ├── logo-gemini.svg
+│   │   │       ├── logo-cursor.png
+│   │   │       ├── logo-github-copilot.png
+│   │   │       ├── logo-google-ai-studio.png
+│   │   │       ├── logo-notebooklm.jpg
+│   │   │       ├── logo-custom-gpts.webp
+│   │   │       ├── logo-gemini-gems.png
+│   │   │       ├── logo-perplexity-ai.svg
+│   │   │       ├── logo-perplexity-labs.jpg
+│   │   │       ├── logo-notion.png
+│   │   │       ├── logo-gamma-ai.webp
+│   │   │       ├── logo-sora.avif
+│   │   │       ├── logo-veo.png
+│   │   │       ├── logo-luma-labs.png
+│   │   │       ├── logo-midjourney.png
+│   │   │       ├── logo-krea-ai.png
+│   │   │       ├── logo-higgsfield.jpg
+│   │   │       ├── logo-hailuo-ai.png
+│   │   │       ├── logo-suno-ai.png
+│   │   │       ├── logo-elevenlabs.svg
+│   │   │       ├── logo-tableau.png
+│   │   │       ├── logo-knime.jpg
+│   │   │       ├── logo-numerous-ai.png
+│   │   │       └── logo-replit.png
+│   └── docs/
+│       └── project-details.md         # Detailed project descriptions
+└── LICENSE                           # MIT License
 ```
 
-## 🚀 Deployment
+## 🚀 Getting Started
 
-This website can be deployed on any static hosting platform:
+### Prerequisites
+- Any modern web browser
+- Web server (optional, for local development)
 
-- **GitHub Pages**: Push to GitHub and enable Pages
-- **Netlify**: Drag and drop the files or connect to repository
-- **Vercel**: Import project from GitHub
-- **Replit**: Host directly on Replit platform
+### Installation
 
-### Quick Deploy Steps:
-1. Clone this repository
-2. Upload all files to your hosting platform
-3. Ensure `index.html` is in the root directory
-4. Access your deployed website
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/AmbrishMuniraju/portfolio-website.git
+   cd portfolio-website
+   ```
+
+2. **Run locally**
+   ```bash
+   # Using Python (if installed)
+   python -m http.server 8000
+   
+   # Using Node.js (if installed)
+   npx serve .
+   
+   # Or simply open index.html in your browser
+   ```
+
+3. **Access the website**
+   - Open `http://localhost:8000` in your browser
+   - Or open `index.html` directly
+
+## 📱 Sections Overview
+
+### 🏠 Home
+- Hero section with animated name and interactive subtitle
+- Professional introduction with hover effects
+- Direct links to LinkedIn and GitHub
+
+### 👨‍💼 Meet Ambrish
+- Personal introduction and professional background
+- Master's in Business Analytics from Queen's University Belfast
+- Expertise in AI, data analysis, and business intelligence
+
+### 💼 My Work
+- **Movie Success Factor Analysis**: ML algorithms for box office prediction
+- **Customer Review Sentiment Analysis**: NLP-based emotion analysis
+- **Insurance Purchase Prediction**: Customer demographic ML modeling
+- **HR Analytics Dashboard**: Employee attrition analysis with Tableau
+- **Customer Segmentation**: RFM analysis and clustering algorithms
+- **AI-Enhanced Portfolio**: This website showcasing AI integration
+
+### 💡 How I Add Value
+- **Analytical & Professional**: Data visualization, statistical modeling, BI
+- **Technical Skills**: Machine learning, NLP, deep learning, data mining
+- **Programming & Software**: Python, R, SQL, Tableau, Power BI
+
+### 🤖 My AI Stack
+- **Data Analysis & Visualization**: Tableau, KNIME, Numerous AI
+- **Coding & Development**: Replit, Cursor, GitHub Copilot
+- **Research & AI Models**: Google AI Studio, Gemini, ChatGPT, Claude
+- **Productivity & Documentation**: NotebookLM, Custom GPTs, Gemini Gems
+- **Creative & Media Generation**: Perplexity, Notion, Gamma AI
+- **Generative Media**: Sora, Veo, Luma Labs, Midjourney, KREA AI, Higgsfield, Hailuo AI, Suno AI, ElevenLabs
+
+### 🎓 My Educational Background
+- **MSc Business Analytics** - Queen's University Belfast (2024)
+- **Bachelor of Commerce** - Bangalore University (2022)
+
+### 📞 Let's Connect
+- Email: ambrishmuniraju02@gmail.com
+- LinkedIn: [linkedin.com/in/ambrishmuniraju](https://www.linkedin.com/in/ambrishmuniraju/)
+- GitHub: [github.com/AmbrishMuniraju](https://github.com/AmbrishMuniraju)
+
+## 🎨 Design Features
+
+- **Typography**: Poppins (main), Playfair Display (elegant text), JetBrains Mono (code)
+- **Color Scheme**: Dark theme (#121212) with purple accents (#BB86FC)
+- **Layout**: 90% width container with responsive grid systems
+- **Animations**: Smooth fade-in effects, hover transitions, and scaling animations
+- **Icons**: Font Awesome for social media and UI elements
+
+## 📊 Performance
+
+- **Lightweight**: Single HTML file approach for fast loading
+- **Optimized**: CDN resources for fonts and icons
+- **Responsive**: Mobile-first design with flexible layouts
+- **Accessible**: Semantic HTML and proper ARIA labels
+
+## 🔧 Customization
+
+To customize this portfolio for your own use:
+
+1. **Update Personal Information**: Replace name, bio, and contact details
+2. **Replace Images**: Add your own project screenshots and profile images
+3. **Modify Projects**: Update project descriptions and GitHub links
+4. **Customize Colors**: Change the CSS color variables in the `<style>` section
+5. **Add/Remove Sections**: Modify the HTML structure as needed
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+While this is a personal portfolio, suggestions and improvements are welcome! Feel free to:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/improvement`)
+3. Commit your changes (`git commit -am 'Add some improvement'`)
+4. Push to the branch (`git push origin feature/improvement`)
+5. Open a Pull Request
 
 ## 📧 Contact
 
 **Ambrish Muniraju**
-- Email: ambrishmuniraju05@gmail.com
+- Email: ambrishmuniraju02@gmail.com
 - LinkedIn: [linkedin.com/in/ambrishmuniraju](https://www.linkedin.com/in/ambrishmuniraju/)
 - GitHub: [github.com/AmbrishMuniraju](https://github.com/AmbrishMuniraju)
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ---
 
-*Built with passion for data analysis and modern web development* ✨
+*Built with ❤️ using HTML, CSS, and JavaScript. Enhanced with AI assistance for optimal design and functionality.*
