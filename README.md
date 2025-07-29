@@ -18,7 +18,7 @@ A modern, responsive personal portfolio website showcasing my journey as a Data 
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript
 - **Fonts**: Google Fonts (Poppins, Playfair Display, JetBrains Mono)
 - **Icons**: Font Awesome 6.4.0
-- **Hosting**: Static hosting ready (Netlify, Vercel, GitHub Pages)
+- **Hosting**: GitHub Pages
 
 ## 📂 Project Structure
 
