@@ -174,16 +174,6 @@ To customize this portfolio for your own use:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
-
-While this is a personal portfolio, suggestions and improvements are welcome! Feel free to:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add some improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
 ## 📧 Contact
 
 **Ambrish Muniraju**
