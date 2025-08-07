@@ -74,35 +74,6 @@ portfolio-website/
 └── LICENSE                           # MIT License
 ```
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Any modern web browser
-- Web server (optional, for local development)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/AmbrishMuniraju/portfolio-website.git
-   cd portfolio-website
-   ```
-
-2. **Run locally**
-   ```bash
-   # Using Python (if installed)
-   python -m http.server 8000
-   
-   # Using Node.js (if installed)
-   npx serve .
-   
-   # Or simply open index.html in your browser
-   ```
-
-3. **Access the website**
-   - Open `http://localhost:8000` in your browser
-   - Or open `index.html` directly
-
 ## 📱 Sections Overview
 
 ### 🏠 Home
@@ -141,7 +112,7 @@ portfolio-website/
 - **Bachelor of Commerce** - Bangalore University (2022)
 
 ### 📞 Let's Connect
-- Email: ambrishmuniraju02@gmail.com
+- Email: ambrishmuniraju05@gmail.com
 - LinkedIn: [linkedin.com/in/ambrishmuniraju](https://www.linkedin.com/in/ambrishmuniraju/)
 - GitHub: [github.com/AmbrishMuniraju](https://github.com/AmbrishMuniraju)
 
@@ -159,16 +130,6 @@ portfolio-website/
 - **Optimized**: CDN resources for fonts and icons
 - **Responsive**: Mobile-first design with flexible layouts
 - **Accessible**: Semantic HTML and proper ARIA labels
-
-## 🔧 Customization
-
-To customize this portfolio for your own use:
-
-1. **Update Personal Information**: Replace name, bio, and contact details
-2. **Replace Images**: Add your own project screenshots and profile images
-3. **Modify Projects**: Update project descriptions and GitHub links
-4. **Customize Colors**: Change the CSS color variables in the `<style>` section
-5. **Add/Remove Sections**: Modify the HTML structure as needed
 
 ## 📝 License
 
